@@ -18,8 +18,9 @@ class School
   end
   
   def sort
+    sorted_names=[]
     @roster.each do |grade,name_array|
-      name_array.sort
+      sorted_names.push(name_array.sort)
     end
   end
 
