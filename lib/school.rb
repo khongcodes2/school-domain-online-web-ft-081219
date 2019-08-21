@@ -18,9 +18,9 @@ class School
   end
   
   def sort
-    sorted_names=[]
+    sorted_hash={}
     @roster.each do |grade,name_array|
-      sorted_names.push(name_array.sort)
+      sorted_hash[grade]=name_array.sort
     end
   end
 
