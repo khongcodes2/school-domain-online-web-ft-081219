@@ -17,5 +17,11 @@ class School
     @roster[num]
   end
   
+  def sort
+    @roster.each do |grade,name_array|
+      name_array.sort!
+    end
+  end
+
 end
 
