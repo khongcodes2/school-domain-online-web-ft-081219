@@ -1,7 +1,7 @@
 # code here!
 class School
   attr_accessor
-  attr_reader :name, :roster, :grade
+  attr_reader :name, :roster
   
   def initialize(name)
     @roster={}
@@ -11,6 +11,10 @@ class School
   def add_student(name,grade)
     @roster[grade] ||= []
     @roster[grade].push(name)
+  end
+  
+  def grade(num)
+    @roster[num]
   end
   
 end
