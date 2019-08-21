@@ -8,5 +8,9 @@ class School
     @name=name
   end
   
+  def add_student(name,grade)
+    @roster[grade].push(name)
+  end
+  
 end
 
